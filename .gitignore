@@ -47,3 +47,6 @@ tmp/
 # Windows
 Thumbs.db
 ehthumbs.db
+
+src/main/resources/vectorestore/
+src/main/resources/pdfs/

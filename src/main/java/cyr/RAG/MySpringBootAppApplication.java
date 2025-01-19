@@ -1,4 +1,4 @@
-package com.example;
+package cyr.RAG;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,12 +13,4 @@ public class MySpringBootAppApplication {
         SpringApplication.run(MySpringBootAppApplication.class, args);
     }
 
-    @RestController
-    class HelloWorldController {
-
-        @GetMapping("/")
-        public String hello() {
-            return "Hello World";
-        }
-    }
 }
