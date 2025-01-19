@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+//http://localhost:8080/
 @SpringBootApplication
 public class MySpringBootAppApplication {
 
@@ -12,14 +13,12 @@ public class MySpringBootAppApplication {
         SpringApplication.run(MySpringBootAppApplication.class, args);
     }
 
-    /*
-     * @RestController
-     * class HelloWorldController {
-     * 
-     * @GetMapping("/")
-     * public String hello() {
-     * return "Hello World";
-     * }
-     * }
-     */
+    @RestController
+    class HelloWorldController {
+
+        @GetMapping("/")
+        public String hello() {
+            return "Hello World";
+        }
+    }
 }
